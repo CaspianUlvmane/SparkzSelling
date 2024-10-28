@@ -1,0 +1,3 @@
+<?php //bc9497b3cd13b5a3eb6999c998f8e4c8
+
+return [PHP_INT_MAX, 'controllers/card_controller.js'];

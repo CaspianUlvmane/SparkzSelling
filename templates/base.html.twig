@@ -16,9 +16,11 @@
 			{% endblock %}
 		{% endblock %}
 	</head>
-	<nav class='flex justify-center'> {% block nav %}{% endblock %}
-		</nav>
-		<body class="bg-slate-200 flex flex-col"> {% block body %}{% endblock %}
+	<nav>
+		{% block nav %}{% endblock %}
+	</nav>
+	<body>
+		{% block body %}{% endblock %}
 
-			</body>
-		</html>
+	</body>
+</html>

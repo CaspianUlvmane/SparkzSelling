@@ -74,18 +74,20 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
         // line 18
         yield "\t</head>
-\t<nav class='flex justify-center'> ";
-        // line 19
-        yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
+\t<nav>
+\t\t";
         // line 20
-        yield "\t\t</nav>
-\t\t<body class=\"bg-slate-200 flex flex-col\"> ";
+        yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
         // line 21
+        yield "\t</nav>
+\t<body>
+\t\t";
+        // line 23
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 22
+        // line 24
         yield "
-\t\t\t</body>
-\t\t</html>
+\t</body>
+</html>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -200,7 +202,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from [];
     }
 
-    // line 19
+    // line 20
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -222,7 +224,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from [];
     }
 
-    // line 21
+    // line 23
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -265,7 +267,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  226 => 21,  204 => 19,  190 => 15,  177 => 14,  166 => 17,  164 => 14,  159 => 13,  146 => 12,  124 => 9,  100 => 6,  86 => 22,  84 => 21,  81 => 20,  79 => 19,  76 => 18,  74 => 12,  68 => 10,  66 => 9,  63 => 8,  61 => 6,  54 => 1,);
+        return array (  228 => 23,  206 => 20,  192 => 15,  179 => 14,  168 => 17,  166 => 14,  161 => 13,  148 => 12,  126 => 9,  102 => 6,  88 => 24,  86 => 23,  82 => 21,  80 => 20,  76 => 18,  74 => 12,  68 => 10,  66 => 9,  63 => 8,  61 => 6,  54 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -288,12 +290,14 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
 \t\t\t{% endblock %}
 \t\t{% endblock %}
 \t</head>
-\t<nav class='flex justify-center'> {% block nav %}{% endblock %}
-\t\t</nav>
-\t\t<body class=\"bg-slate-200 flex flex-col\"> {% block body %}{% endblock %}
+\t<nav>
+\t\t{% block nav %}{% endblock %}
+\t</nav>
+\t<body>
+\t\t{% block body %}{% endblock %}
 
-\t\t\t</body>
-\t\t</html>
-", "base.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\Test Map\\templates\\base.html.twig");
+\t</body>
+</html>
+", "base.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\base.html.twig");
     }
 }

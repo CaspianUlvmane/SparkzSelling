@@ -90,6 +90,14 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
         // line 12
         yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("aboutcontainer", ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 12, $this->source); })())]);
         yield "
+\t";
+        // line 13
+        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("contactform");
+        yield "
+\t";
+        // line 14
+        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("footer");
+        yield "
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -148,7 +156,7 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  117 => 7,  104 => 6,  91 => 12,  86 => 10,  83 => 9,  81 => 6,  77 => 4,  64 => 3,  41 => 1,);
+        return array (  125 => 7,  112 => 6,  99 => 14,  95 => 13,  91 => 12,  86 => 10,  83 => 9,  81 => 6,  77 => 4,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -165,6 +173,8 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
 \t\t{{component(\"landingmain\")}}
 \t</main>
 \t{{component(\"aboutcontainer\", {\"utilities\": utilities})}}
+\t{{component(\"contactform\")}}
+\t{{component(\"footer\")}}
 {% endblock %}
 ", "/landingpage/landing.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\landingpage\\landing.html.twig");
     }

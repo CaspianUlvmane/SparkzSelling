@@ -219,6 +219,14 @@
         <argument type="service" id=".service_locator.QaaoWjx.App\Controller\MainController"/>
       </call>
     </service>
+    <service id="App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.QaaoWjx.App\Controller\UtilitiesController"/>
+      </call>
+    </service>
+    <service id="App\Repository\UtilitiesRepository" class="App\Repository\UtilitiesRepository" autowire="true" autoconfigure="true"/>
     <service id="argument_metadata_factory" class="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactory"/>
     <service id="argument_resolver.backed_enum_resolver" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\BackedEnumValueResolver">
       <tag priority="100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\BackedEnumValueResolver">controller.argument_value_resolver</tag>
@@ -242,7 +250,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.dyzWi7x"/>
+      <argument type="service" id=".service_locator.ljKqQhC"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -1719,7 +1727,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.dyzWi7x"/>
+      <argument type="service" id=".service_locator.ljKqQhC"/>
     </service>
     <service id="debug.log_processor" class="Symfony\Bridge\Monolog\Processor\DebugProcessor">
       <tag name="kernel.reset" method="reset"/>
@@ -2865,6 +2873,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\MainController" class="App\Controller\MainController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\MainController" class="App\Controller\MainController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\MainController" class="App\Controller\MainController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.pRu6x_4" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -2909,15 +2920,37 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.4wc4Ag1" method="withContext"/>
     </service>
-    <service id=".service_locator.dyzWi7x" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.brzH9uj" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="repository" type="service_closure" id="App\Repository\UtilitiesRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.brzH9uj.App\Controller\MainController::Main()" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\MainController::Main()"/>
+      <argument>App\Controller\MainController::Main()</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.brzH9uj" method="withContext"/>
+    </service>
+    <service id=".service_locator.brzH9uj.App\Controller\UtilitiesController::getCollection()" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\UtilitiesController::getCollection()"/>
+      <argument>App\Controller\UtilitiesController::getCollection()</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.brzH9uj" method="withContext"/>
+    </service>
+    <service id=".service_locator.ljKqQhC" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.4wc4Ag1.kernel::registerContainerConfiguration()"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.4wc4Ag1.kernel::registerContainerConfiguration()"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.4wc4Ag1.kernel::loadRoutes()"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.4wc4Ag1.kernel::loadRoutes()"/>
+        <argument key="App\Controller\MainController::Main" type="service_closure" id=".service_locator.brzH9uj.App\Controller\MainController::Main()"/>
+        <argument key="App\Controller\UtilitiesController::getCollection" type="service_closure" id=".service_locator.brzH9uj.App\Controller\UtilitiesController::getCollection()"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.4wc4Ag1.kernel::registerContainerConfiguration()"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.4wc4Ag1.kernel::loadRoutes()"/>
+        <argument key="App\Controller\MainController:Main" type="service_closure" id=".service_locator.brzH9uj.App\Controller\MainController::Main()"/>
+        <argument key="App\Controller\UtilitiesController:getCollection" type="service_closure" id=".service_locator.brzH9uj.App\Controller\UtilitiesController::getCollection()"/>
       </argument>
     </service>
     <service id=".service_locator.va_rxC4" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -3102,6 +3135,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.QaaoWjx" method="withContext"/>
     </service>
+    <service id=".service_locator.QaaoWjx.App\Controller\UtilitiesController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\UtilitiesController"/>
+      <argument>App\Controller\UtilitiesController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.QaaoWjx" method="withContext"/>
+    </service>
     <service id=".service_locator.Gi9Faxn" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -3225,6 +3264,7 @@
         <argument type="collection">
           <argument>App\Kernel</argument>
           <argument>App\Controller\MainController</argument>
+          <argument>App\Controller\UtilitiesController</argument>
         </argument>
       </call>
     </service>
@@ -3777,7 +3817,7 @@
     <service id="Symfony\UX\Turbo\Broadcaster\BroadcasterInterface" alias="turbo.broadcaster.action_renderer"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.pRu6x_4" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.dyzWi7x"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.ljKqQhC"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
@@ -3804,6 +3844,7 @@
     <service id="twig.configurator.environment" alias="ux.twig_component.twig.environment_configurator"/>
     <service id="turbo.broadcaster.imux" alias="turbo.broadcaster.action_renderer"/>
     <service id=".service_locator.diNoEIK" alias=".service_locator.4wc4Ag1"/>
+    <service id=".service_locator.S7aET4b" alias=".service_locator.brzH9uj"/>
     <service id=".service_locator.YLTSEAJ" alias=".service_locator.QaaoWjx"/>
   </services>
 </container>

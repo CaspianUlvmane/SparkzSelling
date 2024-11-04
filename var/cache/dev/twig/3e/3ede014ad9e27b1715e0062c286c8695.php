@@ -60,28 +60,33 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
         // line 8
         yield "\t\t</title>
+\t\t <script src=\"https://kit.fontawesome.com/2e1a43ec7e.js\" crossorigin=\"anonymous\"></script>
 \t\t<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
 \t\t<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
 \t\t<link href=\"https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap\" rel=\"stylesheet\">
+\t\t<link href=\"//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css\" rel=\"stylesheet\">
+\t\t<link href=\"//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css\" rel=\"stylesheet\">
 
-\t\t<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\"> ";
-        // line 13
+\t\t<link rel=\"icon\" href=\"";
+        // line 16
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Sparkz_logo_textless.svg"), "html", null, true);
+        yield "\"> ";
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 14
+        // line 17
         yield "\t\t";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_link_tags')->getCallable()("app"), "html", null, true);
         yield "
 
 \t\t";
-        // line 16
+        // line 19
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 22
+        // line 25
         yield "\t</head>
 \t<body>
 \t\t";
-        // line 24
+        // line 27
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 25
+        // line 28
         yield "
 \t</body>
 </html>
@@ -119,7 +124,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from [];
     }
 
-    // line 13
+    // line 16
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -141,7 +146,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from [];
     }
 
-    // line 16
+    // line 19
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -154,14 +159,14 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 17
+        // line 20
         yield "\t\t\t";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
         yield "
 \t\t\t";
-        // line 18
-        yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
         // line 21
+        yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
+        // line 24
         yield "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -172,7 +177,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from [];
     }
 
-    // line 18
+    // line 21
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -185,7 +190,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "importmap"));
 
-        // line 19
+        // line 22
         yield "\t\t\t\t";
         yield $this->env->getRuntime('Symfony\Bridge\Twig\Extension\ImportMapRuntime')->importmap("app");
         yield "
@@ -199,7 +204,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
         yield from [];
     }
 
-    // line 24
+    // line 27
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -242,7 +247,7 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  203 => 24,  189 => 19,  176 => 18,  165 => 21,  163 => 18,  158 => 17,  145 => 16,  123 => 13,  99 => 6,  85 => 25,  83 => 24,  79 => 22,  77 => 16,  71 => 14,  69 => 13,  62 => 8,  60 => 6,  53 => 1,);
+        return array (  208 => 27,  194 => 22,  181 => 21,  170 => 24,  168 => 21,  163 => 20,  150 => 19,  128 => 16,  104 => 6,  90 => 28,  88 => 27,  84 => 25,  82 => 19,  76 => 17,  72 => 16,  62 => 8,  60 => 6,  53 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -255,11 +260,14 @@ class __TwigTemplate_1356c811a9fc1dd22b3358ef930539ef extends Template
 \t\t\t{% block title %}Sparkz
 \t\t\t{% endblock %}
 \t\t</title>
+\t\t <script src=\"https://kit.fontawesome.com/2e1a43ec7e.js\" crossorigin=\"anonymous\"></script>
 \t\t<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
 \t\t<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
 \t\t<link href=\"https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap\" rel=\"stylesheet\">
+\t\t<link href=\"//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css\" rel=\"stylesheet\">
+\t\t<link href=\"//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css\" rel=\"stylesheet\">
 
-\t\t<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\"> {% block stylesheets %}{% endblock %}
+\t\t<link rel=\"icon\" href=\"{{asset('images/Sparkz_logo_textless.svg')}}\"> {% block stylesheets %}{% endblock %}
 \t\t{{ encore_entry_link_tags('app') }}
 
 \t\t{% block javascripts %}

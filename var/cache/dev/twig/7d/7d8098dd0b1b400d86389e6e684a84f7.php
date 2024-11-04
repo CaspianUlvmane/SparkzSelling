@@ -88,7 +88,7 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
 \t</main>
 \t";
         // line 12
-        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("aboutcontainer");
+        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("aboutcontainer", ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 12, $this->source); })())]);
         yield "
 ";
         
@@ -164,7 +164,7 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
 \t\t</nav>
 \t\t{{component(\"landingmain\")}}
 \t</main>
-\t{{component(\"aboutcontainer\")}}
+\t{{component(\"aboutcontainer\", {\"utilities\": utilities})}}
 {% endblock %}
 ", "/landingpage/landing.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\landingpage\\landing.html.twig");
     }

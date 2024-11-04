@@ -1,0 +1,12 @@
+<div id="about" class="pt-28 flex flex-col bg-Blue-700 gap-5 relative">
+	<h1 class="max-w-3xl m-auto text-7xl text-white font-extrabold text-center tracking-tighter">Detta är
+		<span class="text-Blue-200">Sparkz</span>
+	</h1>
+	<p class="m-auto text-Blue-100 font-semibold text-xl">Hantera ditt erbjudande mot kunder på bästa sätt. Sparkz täcker alla områden.</p>
+	<div class="grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16">
+		{% for utilitiy in utilities %}
+			{{component("aboututility", {"utilitiy": utilitiy})}}
+		{% endfor %}
+	</div>
+</div>
+<div class="max-w-screen h-28 bg-gradient-to-tl from-Blue-800 from-[49%] via-Blue-700 via-50% to-Blue-700 to-50%"></div>

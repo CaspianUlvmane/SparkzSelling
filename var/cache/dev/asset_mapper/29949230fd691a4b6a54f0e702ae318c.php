@@ -1,4 +1,4 @@
-O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:68:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-2f4184c43309562630bfb5ae39f65c42.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:17673:"*, ::before, ::after {
+O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:68:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-aab636dde5c2de1487b6ac75aafd0579.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:17626:"*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -974,13 +974,6 @@ video {
   font-family: inter, sans-serif;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
-body {
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -989,5 +982,4 @@ body {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-";s:6:"digest";s:32:"2f4184c43309562630bfb5ae39f65c42";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:1:{i:0;s:73:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling/var/tailwind/app.built.css";}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}
+}";s:6:"digest";s:32:"aab636dde5c2de1487b6ac75aafd0579";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:1:{i:0;s:73:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling/var/tailwind/app.built.css";}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}

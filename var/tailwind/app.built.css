@@ -974,9 +974,6 @@ video {
   font-family: inter, sans-serif;
 }
 
-body {
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));

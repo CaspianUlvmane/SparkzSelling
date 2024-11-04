@@ -13,7 +13,7 @@ class MainController extends AbstractController
     public function Main()
     {
 
-        return $this->render('base.html.twig');
+        return $this->render('/landingpage/landing.html.twig');
         exit;
     }
 }

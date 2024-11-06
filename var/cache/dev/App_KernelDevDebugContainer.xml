@@ -219,6 +219,13 @@
         <argument type="service" id=".service_locator.QaaoWjx.App\Controller\MainController"/>
       </call>
     </service>
+    <service id="App\Controller\SubmitController" class="App\Controller\SubmitController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.QaaoWjx.App\Controller\SubmitController"/>
+      </call>
+    </service>
     <service id="App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -2873,6 +2880,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\MainController" class="App\Controller\MainController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\MainController" class="App\Controller\MainController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\MainController" class="App\Controller\MainController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SubmitController" class="App\Controller\SubmitController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SubmitController" class="App\Controller\SubmitController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\SubmitController" class="App\Controller\SubmitController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\UtilitiesController" class="App\Controller\UtilitiesController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -3135,6 +3145,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.QaaoWjx" method="withContext"/>
     </service>
+    <service id=".service_locator.QaaoWjx.App\Controller\SubmitController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\SubmitController"/>
+      <argument>App\Controller\SubmitController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.QaaoWjx" method="withContext"/>
+    </service>
     <service id=".service_locator.QaaoWjx.App\Controller\UtilitiesController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\UtilitiesController"/>
       <argument>App\Controller\UtilitiesController</argument>
@@ -3264,6 +3280,7 @@
         <argument type="collection">
           <argument>App\Kernel</argument>
           <argument>App\Controller\MainController</argument>
+          <argument>App\Controller\SubmitController</argument>
           <argument>App\Controller\UtilitiesController</argument>
         </argument>
       </call>

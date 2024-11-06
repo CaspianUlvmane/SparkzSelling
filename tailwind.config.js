@@ -17,7 +17,11 @@ module.exports = {
       "Blue-100": "#CCDFED",
       "Blue-50": "#E6EFF6",
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        input: "0px 0px 10px",
+      },
+    },
   },
   plugins: [],
 };

@@ -54,7 +54,7 @@ class __TwigTemplate_ad739882cf5f3e8f3d15d603db9b481c extends Template
 <img src=\"";
         // line 7
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/sparkz_calender.png"), "html", null, true);
-        yield "\" alt=\"Sparkz kalender på mobil och på dator\" class=\"min-w-screen-xl m-auto pb-8\"/>
+        yield "\" alt=\"Sparkz kalender på mobil och på dator\" class=\"max-w-[80%] m-auto pb-8\"/>
 <div class=\"max-w-screen h-28 bg-gradient-to-tl from-Blue-700 from-[49%] via-transparent via-50% to-transparent to-50%\"></div>
 ";
         
@@ -98,7 +98,7 @@ class __TwigTemplate_ad739882cf5f3e8f3d15d603db9b481c extends Template
 <p class=\"m-auto text-Blue-100 font-semibold text-xl\">Detta är en relativt kort ingress som just nu saknar ett syfte.</p>
 <button class=\"text-lg rounded-full bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Boka möte</button>
 
-<img src=\"{{ asset('images/sparkz_calender.png') }}\" alt=\"Sparkz kalender på mobil och på dator\" class=\"min-w-screen-xl m-auto pb-8\"/>
+<img src=\"{{ asset('images/sparkz_calender.png') }}\" alt=\"Sparkz kalender på mobil och på dator\" class=\"max-w-[80%] m-auto pb-8\"/>
 <div class=\"max-w-screen h-28 bg-gradient-to-tl from-Blue-700 from-[49%] via-transparent via-50% to-transparent to-50%\"></div>
 ", "components/landingmain.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\landingmain.html.twig");
     }

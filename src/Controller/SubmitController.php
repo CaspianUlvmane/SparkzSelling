@@ -2,24 +2,31 @@
 
 namespace App\Controller;
 
-use App\Repository\UtilitiesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Mime\Email;
 
 
 class SubmitController extends AbstractController
 {
-    #[Route('/submit')]
-    public function Submit()
+    #[Route('/submit', name: 'app_mailer')]
+    public function Submit(MailerInterface $mailer)
     {
-        var_dump($_POST);
         $name = $_POST["name"];
-        $email = $_POST["email"];
+        $emailadress = $_POST["email"];
         $phone = $_POST["phone"];
-        $message = `$name önskar att diskutera Sparkz, du kan nå dem genom $email eller $phone`;
-        if (mail("caspianulvmane@gmail.com", "Sparkz prospekt", $message)) {
-            echo "mail sent";
-        }
+        $message = $name . " önskar att diskutera Sparkz, du kan nå dem genom " . $emailadress . " eller " . $phone;
+
+        $email = (new Email())
+            ->from("cabbeulv@gmail.com")
+            ->to("caspianulvmane@gmail.com")
+            ->subject("Sparkz prospekt")
+            ->text($message);
+
+        $mailer->send($email);
+
+        return $this->render('/landingpage/thankyou.html.twig');
         exit;
     }
 }

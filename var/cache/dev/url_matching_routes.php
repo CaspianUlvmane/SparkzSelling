@@ -15,7 +15,8 @@ return [
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_main_main', '_controller' => 'App\\Controller\\MainController::Main'], null, null, null, false, false, null]],
-        '/submit' => [[['_route' => 'app_submit_submit', '_controller' => 'App\\Controller\\SubmitController::Submit'], null, null, null, false, false, null]],
+        '/submit' => [[['_route' => 'app_mailer', '_controller' => 'App\\Controller\\SubmitController::Submit'], null, null, null, false, false, null]],
+        '/thanks' => [[['_route' => 'app_thanks_thanks', '_controller' => 'App\\Controller\\ThanksController::Thanks'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

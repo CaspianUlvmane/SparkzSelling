@@ -18,7 +18,9 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_main_main' => [[], ['_controller' => 'App\\Controller\\MainController::Main'], [], [['text', '/']], [], [], []],
-    'app_submit_submit' => [[], ['_controller' => 'App\\Controller\\SubmitController::Submit'], [], [['text', '/submit']], [], [], []],
+    'app_mailer' => [[], ['_controller' => 'App\\Controller\\SubmitController::Submit'], [], [['text', '/submit']], [], [], []],
+    'app_thanks_thanks' => [[], ['_controller' => 'App\\Controller\\ThanksController::Thanks'], [], [['text', '/thanks']], [], [], []],
     'App\Controller\MainController::Main' => [[], ['_controller' => 'App\\Controller\\MainController::Main'], [], [['text', '/']], [], [], []],
     'App\Controller\SubmitController::Submit' => [[], ['_controller' => 'App\\Controller\\SubmitController::Submit'], [], [['text', '/submit']], [], [], []],
+    'App\Controller\ThanksController::Thanks' => [[], ['_controller' => 'App\\Controller\\ThanksController::Thanks'], [], [['text', '/thanks']], [], [], []],
 ];

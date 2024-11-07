@@ -56,10 +56,14 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
 \t\t<h1 class=\"text-5xl text-white font-extrabold pb-6\">Kontakta
 \t\t\t<span class=\"text-Blue-200\">oss</span>
 \t\t</h1>
+
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt namn!')\" onchange=\"this.setCustomValidity('')\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
+
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i en E-mail adress!')\" onchange=\"this.setCustomValidity('')\" type=\"email\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
+
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt telefon nummer!')\" onchange=\"this.setCustomValidity('')\" type=\"number\" class=\"bg-transparent [appearance:textfield] p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
-\t\t<button data-turbo=\"false\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
+
+\t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
 \t</form>
 
 </div>
@@ -107,10 +111,14 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
 \t\t<h1 class=\"text-5xl text-white font-extrabold pb-6\">Kontakta
 \t\t\t<span class=\"text-Blue-200\">oss</span>
 \t\t</h1>
+
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt namn!')\" onchange=\"this.setCustomValidity('')\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
+
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i en E-mail adress!')\" onchange=\"this.setCustomValidity('')\" type=\"email\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
+
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt telefon nummer!')\" onchange=\"this.setCustomValidity('')\" type=\"number\" class=\"bg-transparent [appearance:textfield] p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
-\t\t<button data-turbo=\"false\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
+
+\t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
 \t</form>
 
 </div>

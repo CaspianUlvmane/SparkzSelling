@@ -14,7 +14,7 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* components/contactform.html.twig */
+/* /components/contactform.html.twig */
 class __TwigTemplate_b0aed1fc7740556f9492281a8308e1e6 extends Template
 {
     private Source $source;
@@ -39,10 +39,10 @@ class __TwigTemplate_b0aed1fc7740556f9492281a8308e1e6 extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/contactform.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/contactform.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/contactform.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/contactform.html.twig"));
 
         // line 1
         yield "<div id=\"contact\" class=\"bg-Blue-800 pt-20 relative\">
@@ -56,10 +56,10 @@ class __TwigTemplate_b0aed1fc7740556f9492281a8308e1e6 extends Template
 \t\t<h1 class=\"text-5xl text-white font-extrabold pb-6\">Kontakta
 \t\t\t<span class=\"text-Blue-200\">oss</span>
 \t\t</h1>
-\t\t<input class=\"bg-transparent p-4 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
-\t\t<input class=\"bg-transparent p-4 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
-\t\t<input class=\"bg-transparent p-4 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
-\t\t<button class=\"text-lg rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
+\t\t<input class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
+\t\t<input class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
+\t\t<input class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
+\t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
 \t</form>
 
 </div>
@@ -78,7 +78,7 @@ class __TwigTemplate_b0aed1fc7740556f9492281a8308e1e6 extends Template
      */
     public function getTemplateName(): string
     {
-        return "components/contactform.html.twig";
+        return "/components/contactform.html.twig";
     }
 
     /**
@@ -107,13 +107,13 @@ class __TwigTemplate_b0aed1fc7740556f9492281a8308e1e6 extends Template
 \t\t<h1 class=\"text-5xl text-white font-extrabold pb-6\">Kontakta
 \t\t\t<span class=\"text-Blue-200\">oss</span>
 \t\t</h1>
-\t\t<input class=\"bg-transparent p-4 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
-\t\t<input class=\"bg-transparent p-4 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
-\t\t<input class=\"bg-transparent p-4 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
-\t\t<button class=\"text-lg rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
+\t\t<input class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
+\t\t<input class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
+\t\t<input class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
+\t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
 \t</form>
 
 </div>
-", "components/contactform.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\contactform.html.twig");
+", "/components/contactform.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\contactform.html.twig");
     }
 }

@@ -5,3 +5,8 @@
 *{
     font-family: inter, sans-serif;
 }
+
+.scaleanimation{
+    transform: scale(0);
+    color: transparent;
+}

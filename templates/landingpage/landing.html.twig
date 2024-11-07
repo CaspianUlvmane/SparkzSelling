@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<main class="flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative">
-		<nav class="bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex items-center pl-10 pr-10 justify-between">
+	<main id="main" class="flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative">
+		<nav data-controller="scroll" class="bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex z-20 items-center pl-10 pr-10 justify-between">
 			{% block nav %}
 				{{component("header")}}
 			{% endblock %}
 		</nav>
-		{{component("landingmain")}}
+		{% include "/components/landingmain.html.twig" %}
 	</main>
-	{{component("aboutcontainer", {"utilities": utilities})}}
-	{{component("contactform")}}
+	{% include "/components/aboutcontainer.html.twig" with {"utilities": utilities} %}
+	{% include "/components/contactform.html.twig" %}
 	{{component("footer")}}
 {% endblock %}

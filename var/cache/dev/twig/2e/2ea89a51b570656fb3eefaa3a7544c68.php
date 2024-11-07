@@ -14,7 +14,7 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* components/landingmain.html.twig */
+/* /components/landingmain.html.twig */
 class __TwigTemplate_ad739882cf5f3e8f3d15d603db9b481c extends Template
 {
     private Source $source;
@@ -39,10 +39,10 @@ class __TwigTemplate_ad739882cf5f3e8f3d15d603db9b481c extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/landingmain.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/landingmain.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/landingmain.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/landingmain.html.twig"));
 
         // line 1
         yield "<h1 class=\"pt-36 max-w-3xl m-auto text-7xl text-white font-extrabold text-center tracking-tighter\">Ett
@@ -71,7 +71,7 @@ class __TwigTemplate_ad739882cf5f3e8f3d15d603db9b481c extends Template
      */
     public function getTemplateName(): string
     {
-        return "components/landingmain.html.twig";
+        return "/components/landingmain.html.twig";
     }
 
     /**
@@ -100,6 +100,6 @@ class __TwigTemplate_ad739882cf5f3e8f3d15d603db9b481c extends Template
 
 <img src=\"{{ asset('images/sparkz_calender.png') }}\" alt=\"Sparkz kalender på mobil och på dator\" class=\"max-w-[80%] m-auto pb-8\"/>
 <div class=\"max-w-screen h-28 bg-gradient-to-tl from-Blue-700 from-[49%] via-transparent via-50% to-transparent to-50%\"></div>
-", "components/landingmain.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\landingmain.html.twig");
+", "/components/landingmain.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\landingmain.html.twig");
     }
 }

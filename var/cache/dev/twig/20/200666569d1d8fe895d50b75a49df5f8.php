@@ -74,25 +74,25 @@ class __TwigTemplate_d281d9490025e5c929b6524787ce9eab extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        yield "\t<div class=\"bg-Blue-800 pt-20 relative\">
+        yield "\t<div class=\"bg-Blue-800 pt-20 relative h-screen overflow-hidden\">
 \t\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]\">
 \t\t\t";
         // line 6
         yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
         // line 9
         yield "\t\t</nav>
-\t\t<div class=\"h-[600px] overflow-hidden\">
-\t\t\t<img class=\"opacity-10 object-cover\" src=\"";
+\t\t<div class=\"overflow-hidden\">
+\t\t\t<img class=\"opacity-10 object-cover z-0\" src=\"";
         // line 11
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/sparkz_logo_white.svg"), "html", null, true);
         yield "\" alt=\"\">
 \t\t</div>
 \t\t<div class=\"absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-6\">
 \t\t\t<div class=\"flex align-middle justify-center\">
-\t\t\t\t<div class=\"text-Blue-200 text-7xl border-2 aspect-square p-6 rounded-full flex justify-center items-center font-extrabold\">Tack
+\t\t\t\t<div data-controller=\"animation\" data-action=\"animation#connect\" class=\"text-Blue-300 duration-300 scale-1 transition-all  text-9xl border-4 aspect-square p-12 rounded-full flex justify-center items-center font-extrabold scaleanimation\">Tack
 \t\t\t\t</div>
 \t\t\t</div>
-\t\t\t<div class=\"text-center text-white text-xl font-semibold\">Vi kontaktar dig snarast</div>
+\t\t\t<div data-controller=\"animation\" data-action=\"animation#connect\" class=\"text-center transition-all duration-300 delay-300 text-white text-xl font-semibold scaleanimation\">Vi kontaktar dig snarast</div>
 \t\t</div>
 \t</div>
 \t";
@@ -165,21 +165,21 @@ class __TwigTemplate_d281d9490025e5c929b6524787ce9eab extends Template
         return new Source("{% extends \"base.html.twig\" %}
 
 {% block body %}
-\t<div class=\"bg-Blue-800 pt-20 relative\">
+\t<div class=\"bg-Blue-800 pt-20 relative h-screen overflow-hidden\">
 \t\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]\">
 \t\t\t{% block nav %}
 \t\t\t\t{{component(\"header\")}}
 \t\t\t{% endblock %}
 \t\t</nav>
-\t\t<div class=\"h-[600px] overflow-hidden\">
-\t\t\t<img class=\"opacity-10 object-cover\" src=\"{{ asset('images/sparkz_logo_white.svg') }}\" alt=\"\">
+\t\t<div class=\"overflow-hidden\">
+\t\t\t<img class=\"opacity-10 object-cover z-0\" src=\"{{ asset('images/sparkz_logo_white.svg') }}\" alt=\"\">
 \t\t</div>
 \t\t<div class=\"absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-6\">
 \t\t\t<div class=\"flex align-middle justify-center\">
-\t\t\t\t<div class=\"text-Blue-200 text-7xl border-2 aspect-square p-6 rounded-full flex justify-center items-center font-extrabold\">Tack
+\t\t\t\t<div data-controller=\"animation\" data-action=\"animation#connect\" class=\"text-Blue-300 duration-300 scale-1 transition-all  text-9xl border-4 aspect-square p-12 rounded-full flex justify-center items-center font-extrabold scaleanimation\">Tack
 \t\t\t\t</div>
 \t\t\t</div>
-\t\t\t<div class=\"text-center text-white text-xl font-semibold\">Vi kontaktar dig snarast</div>
+\t\t\t<div data-controller=\"animation\" data-action=\"animation#connect\" class=\"text-center transition-all duration-300 delay-300 text-white text-xl font-semibold scaleanimation\">Vi kontaktar dig snarast</div>
 \t\t</div>
 \t</div>
 \t{{component('footer')}}

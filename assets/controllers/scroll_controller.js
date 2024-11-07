@@ -7,10 +7,5 @@ export default class extends Controller {
 
   scrollevent(event) {
     let target = event.currentTarget.hash;
-    target = target.substring(1);
-    target = document.getElementById(target).getBoundingClientRect();
-    console.log(target);
-
-    window.scrollTo({ left: target.x, top: target.y, behavior: "smooth" });
   }
 }

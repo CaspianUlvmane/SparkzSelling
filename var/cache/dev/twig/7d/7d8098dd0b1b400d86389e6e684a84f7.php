@@ -74,8 +74,8 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        yield "\t<main class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
-\t\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex items-center pl-10 pr-10 justify-between\">
+        yield "\t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
+\t\t<nav data-controller=\"scroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
 \t\t\t";
         // line 6
         yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
@@ -83,19 +83,17 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
         yield "\t\t</nav>
 \t\t";
         // line 10
-        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("landingmain");
-        yield "
-\t</main>
+        yield from         $this->loadTemplate("/components/landingmain.html.twig", "/landingpage/landing.html.twig", 10)->unwrap()->yield($context);
+        // line 11
+        yield "\t</main>
 \t";
         // line 12
-        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("aboutcontainer", ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 12, $this->source); })())]);
-        yield "
-\t";
+        yield from         $this->loadTemplate("/components/aboutcontainer.html.twig", "/landingpage/landing.html.twig", 12)->unwrap()->yield(CoreExtension::merge($context, ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 12, $this->source); })())]));
         // line 13
-        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("contactform");
-        yield "
-\t";
+        yield "\t";
+        yield from         $this->loadTemplate("/components/contactform.html.twig", "/landingpage/landing.html.twig", 13)->unwrap()->yield($context);
         // line 14
+        yield "\t";
         yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("footer");
         yield "
 ";
@@ -156,7 +154,7 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  125 => 7,  112 => 6,  99 => 14,  95 => 13,  91 => 12,  86 => 10,  83 => 9,  81 => 6,  77 => 4,  64 => 3,  41 => 1,);
+        return array (  123 => 7,  110 => 6,  96 => 14,  93 => 13,  91 => 12,  88 => 11,  86 => 10,  83 => 9,  81 => 6,  77 => 4,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -164,16 +162,16 @@ class __TwigTemplate_88d4677e53f50e97bd7bf7a8a2525cce extends Template
         return new Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-\t<main class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
-\t\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex items-center pl-10 pr-10 justify-between\">
+\t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
+\t\t<nav data-controller=\"scroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
 \t\t\t{% block nav %}
 \t\t\t\t{{component(\"header\")}}
 \t\t\t{% endblock %}
 \t\t</nav>
-\t\t{{component(\"landingmain\")}}
+\t\t{% include \"/components/landingmain.html.twig\" %}
 \t</main>
-\t{{component(\"aboutcontainer\", {\"utilities\": utilities})}}
-\t{{component(\"contactform\")}}
+\t{% include \"/components/aboutcontainer.html.twig\" with {\"utilities\": utilities} %}
+\t{% include \"/components/contactform.html.twig\" %}
 \t{{component(\"footer\")}}
 {% endblock %}
 ", "/landingpage/landing.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\landingpage\\landing.html.twig");

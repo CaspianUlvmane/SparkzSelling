@@ -1,21 +1,21 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-	<div class="bg-Blue-800 pt-20 relative">
+	<div class="bg-Blue-800 pt-20 relative h-screen overflow-hidden">
 		<nav class="bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]">
 			{% block nav %}
 				{{component("header")}}
 			{% endblock %}
 		</nav>
-		<div class="h-[600px] overflow-hidden">
-			<img class="opacity-10 object-cover" src="{{ asset('images/sparkz_logo_white.svg') }}" alt="">
+		<div class="overflow-hidden">
+			<img class="opacity-10 object-cover z-0" src="{{ asset('images/sparkz_logo_white.svg') }}" alt="">
 		</div>
 		<div class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-6">
 			<div class="flex align-middle justify-center">
-				<div class="text-Blue-200 text-7xl border-2 aspect-square p-6 rounded-full flex justify-center items-center font-extrabold">Tack
+				<div data-controller="animation" data-action="animation#connect" class="text-Blue-300 duration-300 scale-1 transition-all  text-9xl border-4 aspect-square p-12 rounded-full flex justify-center items-center font-extrabold scaleanimation">Tack
 				</div>
 			</div>
-			<div class="text-center text-white text-xl font-semibold">Vi kontaktar dig snarast</div>
+			<div data-controller="animation" data-action="animation#connect" class="text-center transition-all duration-300 delay-300 text-white text-xl font-semibold scaleanimation">Vi kontaktar dig snarast</div>
 		</div>
 	</div>
 	{{component('footer')}}

@@ -1,4 +1,4 @@
-O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:68:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-84d6ccbba4217fa69c751971659990e4.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:18582:"*, ::before, ::after {
+O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:68:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-583ae255d1987e3187e26e1e9c0a2348.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:20920:"*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -590,8 +590,16 @@ video {
   top: 1.5rem;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-auto {
@@ -604,6 +612,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -620,10 +632,6 @@ video {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-
-.h-0 {
-  height: 0px;
 }
 
 .h-10 {
@@ -644,6 +652,10 @@ video {
 
 .h-\[600px\] {
   height: 600px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-28 {
@@ -709,10 +721,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -721,12 +729,12 @@ video {
   gap: 1.25rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -747,6 +755,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-white {
@@ -842,12 +854,12 @@ video {
      object-fit: cover;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-12 {
+  padding: 3rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .pb-16 {
@@ -868,6 +880,10 @@ video {
 
 .pl-7 {
   padding-left: 1.75rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pr-10 {
@@ -914,6 +930,11 @@ video {
 
 .text-7xl {
   font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
   line-height: 1;
 }
 
@@ -990,6 +1011,10 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-300 {
+  transition-delay: 300ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -998,29 +1023,119 @@ video {
   font-family: inter, sans-serif;
 }
 
-.before\:absolute::before {
+.scaleanimation{
+  transform: scale(0);
+  color: transparent;
+}
+
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:h-4::before {
+  content: var(--tw-content);
+  height: 1rem;
+}
+
+.before\:w-4::before {
+  content: var(--tw-content);
+  width: 1rem;
+}
+
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
+  }
+}
+
+.before\:animate-spin::before {
+  content: var(--tw-content);
+  animation: spin 1s linear infinite;
+}
+
+.before\:rounded-full::before {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.before\:bg-gradient-to-t::before {
+  content: var(--tw-content);
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.before\:from-Blue-900::before {
+  content: var(--tw-content);
+  --tw-gradient-from: #000910 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 9 16 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.before\:via-Blue-800::before {
+  content: var(--tw-content);
+  --tw-gradient-to: rgb(0 24 41 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #001829 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.before\:to-Blue-500::before {
+  content: var(--tw-content);
+  --tw-gradient-to: #005EA3 var(--tw-gradient-to-position);
+}
+
+.after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
 }
 
-.before\:bottom-\[-50\%\]::before {
+.after\:left-\[1\.87rem\]::after {
   content: var(--tw-content);
-  bottom: -50%;
+  left: 1.87rem;
 }
 
-.before\:left-\[-50\%\]::before {
+.after\:h-3::after {
   content: var(--tw-content);
-  left: -50%;
+  height: 0.75rem;
 }
 
-.before\:right-\[-50\%\]::before {
+.after\:w-3::after {
   content: var(--tw-content);
-  right: -50%;
+  width: 0.75rem;
 }
 
-.before\:top-\[-50\%\]::before {
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
+  }
+}
+
+.after\:animate-spin::after {
   content: var(--tw-content);
-  top: -50%;
+  animation: spin 1s linear infinite;
+}
+
+.after\:rounded-full::after {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.after\:bg-Blue-200::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 191 218 / var(--tw-bg-opacity));
+}
+
+.after\:transition-all::after {
+  content: var(--tw-content);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.after\:duration-300::after {
+  content: var(--tw-content);
+  transition-duration: 300ms;
 }
 
 .hover\:bg-white:hover {
@@ -1033,6 +1148,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.after\:hover\:bg-white:hover::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .focus-visible\:shadow-input:focus-visible {
   --tw-shadow: 0px 0px 10px;
   --tw-shadow-colored: 0px 0px 10px var(--tw-shadow-color);
@@ -1042,4 +1163,4 @@ video {
 .focus-visible\:outline-none:focus-visible {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}";s:6:"digest";s:32:"84d6ccbba4217fa69c751971659990e4";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:1:{i:0;s:73:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling/var/tailwind/app.built.css";}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}
+}";s:6:"digest";s:32:"583ae255d1987e3187e26e1e9c0a2348";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:1:{i:0;s:73:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling/var/tailwind/app.built.css";}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}

@@ -26,7 +26,11 @@ class SubmitController extends AbstractController
 
         $mailer->send($email);
 
-        return $this->render('/landingpage/thankyou.html.twig');
+        $form = $_POST;
+
+        return $this->render('/landingpage/thankyou.html.twig', [
+            'form' => $form,
+        ]);
         exit;
     }
 }

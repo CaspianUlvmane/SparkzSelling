@@ -75,7 +75,7 @@ class __TwigTemplate_d281d9490025e5c929b6524787ce9eab extends Template
 
         // line 4
         yield "\t<div class=\"bg-Blue-800 pt-20 relative h-screen overflow-hidden\">
-\t\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]\">
+\t\t<nav data-controller=\"scroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]\">
 \t\t\t";
         // line 6
         yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
@@ -166,7 +166,7 @@ class __TwigTemplate_d281d9490025e5c929b6524787ce9eab extends Template
 
 {% block body %}
 \t<div class=\"bg-Blue-800 pt-20 relative h-screen overflow-hidden\">
-\t\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]\">
+\t\t<nav data-controller=\"scroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]\">
 \t\t\t{% block nav %}
 \t\t\t\t{{component(\"header\")}}
 \t\t\t{% endblock %}

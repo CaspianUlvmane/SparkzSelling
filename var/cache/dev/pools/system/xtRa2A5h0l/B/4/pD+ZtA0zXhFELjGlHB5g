@@ -1,0 +1,15 @@
+<?php //latestVersion
+
+return [1730995646, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['©'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('©')),
+    ],
+    null,
+    [],
+    $o[0],
+    [
+        [
+            '8Bï`' => 'v3.4.14',
+        ],
+    ]
+)];

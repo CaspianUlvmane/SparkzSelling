@@ -1,4 +1,4 @@
-O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:68:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-c47bbf1b7d63ae8a576a514edf7cf44c.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:21125:"*, ::before, ::after {
+O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:68:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-3a25f903e1a149db9d6c34ba5c349d16.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:21145:"*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -654,6 +654,14 @@ video {
   height: 100vh;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -697,12 +705,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -723,6 +725,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -737,6 +743,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -904,10 +914,6 @@ video {
   padding-top: 7rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -984,6 +990,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.no-underline {
+  text-decoration-line: none;
 }
 
 .opacity-10 {
@@ -1171,4 +1181,4 @@ video {
 .focus-visible\:outline-none:focus-visible {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}";s:6:"digest";s:32:"c47bbf1b7d63ae8a576a514edf7cf44c";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:1:{i:0;s:73:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling/var/tailwind/app.built.css";}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}
+}";s:6:"digest";s:32:"3a25f903e1a149db9d6c34ba5c349d16";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:1:{i:0;s:73:"C:\Users\TVTVTV\Documents\GitHub\SparkzSelling/var/tailwind/app.built.css";}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}

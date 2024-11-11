@@ -5,6 +5,7 @@ namespace App\Repository;
 class UtilitiesRepository
 {
 
+    // Database of Sparkz utilities | adjustable
     public function getUtilities(): array
     {
         $utilities = [

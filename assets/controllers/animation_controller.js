@@ -1,10 +1,12 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
+  // Removes scaleanimation class from affected element
   connect() {
     this.element.classList.remove("scaleanimation");
   }
 
+  // Creates a spinning circle using before and after pseudo elements
   loading() {
     if (this.element.form.checkValidity()) {
       this.element.classList.add(

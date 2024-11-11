@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class UtilitiesController extends AbstractController
 {
-
+    //Returns utilities as a json object
     public function getCollection(UtilitiesRepository $repository)
     {
         $utilities = $repository->getUtilities();

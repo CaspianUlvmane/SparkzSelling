@@ -9,6 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ThanksController extends AbstractController
 {
+    // Renders thanks page - used for dev (shall be removed)
     #[Route('/thanks')]
     public function Thanks()
     {

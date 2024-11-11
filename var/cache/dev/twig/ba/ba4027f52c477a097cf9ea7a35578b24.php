@@ -52,14 +52,16 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
 
         // line 1
         yield "<!DOCTYPE html>
-<html data-controller=\"scrollevents\" class=\"scroll-smooth\" lang=\"sv\">
+";
+        // line 3
+        yield "<html class=\"scroll-smooth\" lang=\"sv\">
 \t<head>
 \t\t<meta charset=\"UTF-8\">
 \t\t<title>
 \t\t\t";
-        // line 6
+        // line 7
         yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
-        // line 8
+        // line 9
         yield "\t\t</title>
 \t\t <script src=\"https://kit.fontawesome.com/2e1a43ec7e.js\" crossorigin=\"anonymous\"></script>
 \t\t<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
@@ -67,34 +69,37 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
 \t\t<link
 \t\thref=\"https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap\" rel=\"stylesheet\">
 \t\t";
-        // line 15
+        // line 16
         yield "\t\t<link href=\"//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css\" rel=\"stylesheet\">
 
 \t\t<link rel=\"icon\" href=\"";
-        // line 17
+        // line 18
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/Sparkz_logo_textless.svg"), "html", null, true);
         yield "\"> ";
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 18
+        // line 19
         yield "\t\t";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_link_tags')->getCallable()("app"), "html", null, true);
         yield "
 
 \t\t";
-        // line 20
+        // line 21
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 26
+        // line 27
         yield "\t</head>
-\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
-\t\t";
-        // line 28
-        yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
+
+\t";
         // line 31
-        yield "\t</nav>
-\t<body data-action=\"scroll@window->scrollevents#navscroll\" class=\"flex flex-col items-center\"> ";
+        yield "\t<nav data-controller=\"scrollevents\" data-action=\"scroll@window->scrollevents#navscroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
+\t\t";
         // line 32
+        yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
+        // line 35
+        yield "\t</nav>
+\t<body class=\"flex flex-col items-center\"> ";
+        // line 36
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 33
+        // line 37
         yield "
 \t\t</body>
 \t</html>
@@ -108,7 +113,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from [];
     }
 
-    // line 6
+    // line 7
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -132,7 +137,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from [];
     }
 
-    // line 17
+    // line 18
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -154,7 +159,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from [];
     }
 
-    // line 20
+    // line 21
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -167,14 +172,14 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 21
+        // line 22
         yield "\t\t\t";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
         yield "
 \t\t\t";
-        // line 22
+        // line 23
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 25
+        // line 26
         yield "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -185,7 +190,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from [];
     }
 
-    // line 22
+    // line 23
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -198,7 +203,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "importmap"));
 
-        // line 23
+        // line 24
         yield "\t\t\t\t";
         yield $this->env->getRuntime('Symfony\Bridge\Twig\Extension\ImportMapRuntime')->importmap("app");
         yield "
@@ -212,7 +217,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from [];
     }
 
-    // line 28
+    // line 32
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -225,7 +230,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "nav"));
 
-        // line 29
+        // line 33
         yield "\t\t\t";
         yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("header");
         yield "
@@ -239,7 +244,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from [];
     }
 
-    // line 32
+    // line 36
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -282,13 +287,14 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  243 => 32,  229 => 29,  216 => 28,  202 => 23,  189 => 22,  178 => 25,  176 => 22,  171 => 21,  158 => 20,  136 => 17,  112 => 6,  98 => 33,  96 => 32,  93 => 31,  91 => 28,  87 => 26,  85 => 20,  79 => 18,  75 => 17,  71 => 15,  63 => 8,  61 => 6,  54 => 1,);
+        return array (  248 => 36,  234 => 33,  221 => 32,  207 => 24,  194 => 23,  183 => 26,  181 => 23,  176 => 22,  163 => 21,  141 => 18,  117 => 7,  103 => 37,  101 => 36,  98 => 35,  96 => 32,  93 => 31,  89 => 27,  87 => 21,  81 => 19,  77 => 18,  73 => 16,  65 => 9,  63 => 7,  57 => 3,  54 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("<!DOCTYPE html>
-<html data-controller=\"scrollevents\" class=\"scroll-smooth\" lang=\"sv\">
+{# initializes Scrollevents controlls on  #}
+<html class=\"scroll-smooth\" lang=\"sv\">
 \t<head>
 \t\t<meta charset=\"UTF-8\">
 \t\t<title>
@@ -313,12 +319,15 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
 \t\t\t{% endblock %}
 \t\t{% endblock %}
 \t</head>
-\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
+
+\t{# Fixed navbar - uses stimulus 'scroll' controller for scroll to content.
+\t\t\t\tCan be reused on all pages. #}
+\t<nav data-controller=\"scrollevents\" data-action=\"scroll@window->scrollevents#navscroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
 \t\t{% block nav %}
 \t\t\t{{component(\"header\")}}
 \t\t{% endblock %}
 \t</nav>
-\t<body data-action=\"scroll@window->scrollevents#navscroll\" class=\"flex flex-col items-center\"> {% block body %}{% endblock %}
+\t<body class=\"flex flex-col items-center\"> {% block body %}{% endblock %}
 
 \t\t</body>
 \t</html>

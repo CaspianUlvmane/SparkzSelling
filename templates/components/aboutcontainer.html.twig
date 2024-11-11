@@ -3,7 +3,9 @@
 		<span class="text-Blue-200">Sparkz</span>
 	</h1>
 	<p class="m-auto text-Blue-100 font-semibold text-xl">Hantera ditt erbjudande mot kunder på bästa sätt. Sparkz täcker alla områden.</p>
-	<div class="grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16">
+	<div
+		class="grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16">
+		{# Loops through utilities from Utilitiesrepository.php and renders through utility component. #}
 		{% for utilitiy in utilities %}
 			{{component("aboututility", {"utilitiy": utilitiy})}}
 		{% endfor %}

@@ -1,10 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{# Landing page initialized by MainController.php. 
+	uses the twig 'includes' method to render components. #}
 {% block body %}
 	<main id="main" class="flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative">
-
 		{% include "/components/landingmain.html.twig" %}
 	</main>
+	{# Utilities recieved from MainController.php sent as params to component #}
 	{% include "/components/aboutcontainer.html.twig" with {"utilities": utilities} %}
 	{% include "/components/contactform.html.twig" %}
 	{{component("footer")}}

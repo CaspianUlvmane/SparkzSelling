@@ -1,4 +1,7 @@
-<div class="rounded-xl bg-Blue-800 p-12 flex flex-col gap-4">
+{# Recieves utility information from about container #}
+<div
+	class="rounded-xl bg-Blue-800 p-12 flex flex-col gap-4">
+	{# '| raw' is used to render raw html, in this case and <i> tag with an icon. #}
 	<div class="text-Blue-300 text-4xl">{{utilitiy["icon"] | raw}}</div>
 	<h3 class="text-white font-semibold text-xl">{{utilitiy["title"]}}<span class="text-Blue-300">.</span>
 	</h3>

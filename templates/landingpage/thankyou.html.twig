@@ -5,12 +5,14 @@
 		<div class="overflow-hidden">
 			<img class="opacity-10 object-cover z-0" src="{{ asset('images/sparkz_logo_white.svg') }}" alt="">
 		</div>
-		<div class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-6">
+		{# Initializes animation controller #}
+		{# Animation method 'connect' initializes on page load #}
+		<div data-controller="animation" class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-6">
 			<div class="flex align-middle justify-center">
-				<div data-controller="animation" data-action="animation#connect" class="text-Blue-300 duration-300 scale-1 transition-all  text-9xl border-4 aspect-square p-12 rounded-full flex justify-center items-center font-extrabold scaleanimation">Tack
+				<div data-action="animation#connect" class="text-Blue-300 duration-300 scale-1 transition-all  text-9xl border-4 aspect-square p-12 rounded-full flex justify-center items-center font-extrabold scaleanimation">Tack
 				</div>
 			</div>
-			<div data-controller="animation" data-action="animation#connect" class="text-center transition-all duration-300 delay-300 text-white text-xl font-semibold scaleanimation">Vi kontaktar dig snarast</div>
+			<div data-action="animation#connect" class="text-center transition-all duration-300 delay-300 text-white text-xl font-semibold scaleanimation">Vi kontaktar dig snarast</div>
 		</div>
 	</div>
 	{{component('footer')}}

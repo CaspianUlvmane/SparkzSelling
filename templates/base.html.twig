@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-controller="scrollevents" class="scroll-smooth" lang="sv">
+<html class="scroll-smooth" lang="sv">
 	<head>
 		<meta charset="UTF-8">
 		<title>
@@ -24,12 +24,14 @@
 			{% endblock %}
 		{% endblock %}
 	</head>
-	<nav class="bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between">
+
+	{# Fixed navbar - Initializes stimulus 'scrollevents' controller. Can be reused on all pages. #}
+	<nav data-controller="scrollevents" data-action="scroll@window->scrollevents#navscroll" class="bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between">
 		{% block nav %}
 			{{component("header")}}
 		{% endblock %}
 	</nav>
-	<body data-action="scroll@window->scrollevents#navscroll" class="flex flex-col items-center"> {% block body %}{% endblock %}
+	<body class="flex flex-col items-center"> {% block body %}{% endblock %}
 
 		</body>
 	</html>

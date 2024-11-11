@@ -2,23 +2,15 @@
 
 namespace App\Controller;
 
-use App\Entity\Contact;
 use App\Repository\UtilitiesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
-use Symfony\Component\Form\Extension\Core\Type\NumberType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Attribute\Route;
-use Symfony\Component\Mime\Email;
-
 
 class MainController extends AbstractController
 {
+    // Retrievs utilities from repository, renders landingpage sending utilities as params
     #[Route('/')]
-    public function Main(UtilitiesRepository $repository, Request $request, MailerInterface $mailer)
+    public function Main(UtilitiesRepository $repository)
     {
         $utilities = $repository->getUtilities();
 

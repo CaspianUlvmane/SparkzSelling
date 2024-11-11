@@ -45,18 +45,18 @@ class __TwigTemplate_031d20903f7d69997a32333279ee6a77 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/footer.html.twig"));
 
         // line 1
-        yield "<div class=\"h-36 bg-black flex items-center justify-center\">
+        yield "<div class=\"h-36 w-full bg-black flex items-center justify-center\">
 \t<div class=\"w-[85%] flex justify-between\">
 \t\t<img class=\"h-10\" style=\"filter: grayscale(100%) brightness(10)\" src=\"";
         // line 3
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/sparkz_logo.svg"), "html", null, true);
         yield "\" alt=\"\">
-\t\t<div class=\"text-white flex items-center gap-2\">
+\t\t<div class=\"text-white flex items-center font-semibold gap-2\">
 \t\t\t<i class=\"fa-solid fa-envelope\"></i>
-\t\t\t<a class=\"hover:text-white underline flex justify-center items-center gap-3\" href=\"mailto: info@sparkz.se\">
+\t\t\t<a class=\"hover:text-white border-b-[3px]  border-Blue-200 flex justify-center items-center gap-3\" href=\"mailto: info@sparkz.se\">
 \t\t\t\tinfo@sparkz.se</a>
 \t\t\t<i class=\"fa-solid fa-phone pl-8\"></i>
-\t\t\t<a class=\"hover:text-white underline flex justify-center items-center gap-3\" href=\"tel:0708358158\">
+\t\t\t<a class=\"hover:text-white border-b-[3px] border-Blue-200 flex justify-center items-center gap-3\" href=\"tel:0708358158\">
 \t\t\t\t070 835 81 58</a>
 \t\t</div>
 \t</div>
@@ -97,15 +97,15 @@ class __TwigTemplate_031d20903f7d69997a32333279ee6a77 extends Template
 
     public function getSourceContext(): Source
     {
-        return new Source("<div class=\"h-36 bg-black flex items-center justify-center\">
+        return new Source("<div class=\"h-36 w-full bg-black flex items-center justify-center\">
 \t<div class=\"w-[85%] flex justify-between\">
 \t\t<img class=\"h-10\" style=\"filter: grayscale(100%) brightness(10)\" src=\"{{ asset('images/sparkz_logo.svg') }}\" alt=\"\">
-\t\t<div class=\"text-white flex items-center gap-2\">
+\t\t<div class=\"text-white flex items-center font-semibold gap-2\">
 \t\t\t<i class=\"fa-solid fa-envelope\"></i>
-\t\t\t<a class=\"hover:text-white underline flex justify-center items-center gap-3\" href=\"mailto: info@sparkz.se\">
+\t\t\t<a class=\"hover:text-white border-b-[3px]  border-Blue-200 flex justify-center items-center gap-3\" href=\"mailto: info@sparkz.se\">
 \t\t\t\tinfo@sparkz.se</a>
 \t\t\t<i class=\"fa-solid fa-phone pl-8\"></i>
-\t\t\t<a class=\"hover:text-white underline flex justify-center items-center gap-3\" href=\"tel:0708358158\">
+\t\t\t<a class=\"hover:text-white border-b-[3px] border-Blue-200 flex justify-center items-center gap-3\" href=\"tel:0708358158\">
 \t\t\t\t070 835 81 58</a>
 \t\t</div>
 \t</div>

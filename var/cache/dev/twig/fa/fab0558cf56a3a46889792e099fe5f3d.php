@@ -14,7 +14,7 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* components/aboutcontainer.html.twig */
+/* /components/aboutcontainer.html.twig */
 class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
 {
     private Source $source;
@@ -39,10 +39,10 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/aboutcontainer.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/aboutcontainer.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/aboutcontainer.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/aboutcontainer.html.twig"));
 
         // line 1
         yield "<div id=\"about\" class=\"pt-28 flex flex-col bg-Blue-700 gap-5 relative\">
@@ -68,7 +68,7 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
         // line 10
         yield "\t</div>
 </div>
-<div class=\"max-w-screen h-28 bg-gradient-to-tl from-Blue-800 from-[49%] via-Blue-700 via-50% to-Blue-700 to-50%\"></div>
+<div class=\"w-full h-28 bg-gradient-to-tl from-Blue-800 from-[49%] via-Blue-700 via-50% to-Blue-700 to-50%\"></div>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -84,7 +84,7 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
      */
     public function getTemplateName(): string
     {
-        return "components/aboutcontainer.html.twig";
+        return "/components/aboutcontainer.html.twig";
     }
 
     /**
@@ -116,7 +116,7 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
 \t\t{% endfor %}
 \t</div>
 </div>
-<div class=\"max-w-screen h-28 bg-gradient-to-tl from-Blue-800 from-[49%] via-Blue-700 via-50% to-Blue-700 to-50%\"></div>
-", "components/aboutcontainer.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\aboutcontainer.html.twig");
+<div class=\"w-full h-28 bg-gradient-to-tl from-Blue-800 from-[49%] via-Blue-700 via-50% to-Blue-700 to-50%\"></div>
+", "/components/aboutcontainer.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\components\\aboutcontainer.html.twig");
     }
 }

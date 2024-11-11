@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="sv">
+<html data-controller="scrollevents" class="scroll-smooth" lang="sv">
 	<head>
 		<meta charset="UTF-8">
 		<title>
@@ -24,8 +24,12 @@
 			{% endblock %}
 		{% endblock %}
 	</head>
-	<body>
-		{% block body %}{% endblock %}
+	<nav class="bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between">
+		{% block nav %}
+			{{component("header")}}
+		{% endblock %}
+	</nav>
+	<body data-action="scroll@window->scrollevents#navscroll" class="flex flex-col items-center"> {% block body %}{% endblock %}
 
-	</body>
-</html>
+		</body>
+	</html>

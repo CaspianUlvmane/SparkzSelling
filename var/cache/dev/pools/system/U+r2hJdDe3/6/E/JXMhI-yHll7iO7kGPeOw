@@ -1,0 +1,3 @@
+<?php //d264158c2d4922432dab700412b2314b
+
+return [PHP_INT_MAX, 'controllers/scrollevents_controller.js'];

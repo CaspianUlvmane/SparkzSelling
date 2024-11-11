@@ -31,7 +31,6 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
 
         $this->blocks = [
             'body' => [$this, 'block_body'],
-            'nav' => [$this, 'block_nav'],
         ];
     }
 
@@ -75,55 +74,23 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
 
         // line 4
         yield "\t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
-\t\t<nav data-controller=\"scroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
-\t\t\t";
-        // line 6
-        yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
-        // line 9
-        yield "\t\t</nav>
+
 \t\t";
-        // line 10
-        yield from         $this->loadTemplate("/components/landingmain.html.twig", "/landingpage/landing.html.twig", 10)->unwrap()->yield($context);
-        // line 11
+        // line 6
+        yield from         $this->loadTemplate("/components/landingmain.html.twig", "/landingpage/landing.html.twig", 6)->unwrap()->yield($context);
+        // line 7
         yield "\t</main>
 \t";
-        // line 12
-        yield from         $this->loadTemplate("/components/aboutcontainer.html.twig", "/landingpage/landing.html.twig", 12)->unwrap()->yield(CoreExtension::merge($context, ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 12, $this->source); })())]));
-        // line 13
+        // line 8
+        yield from         $this->loadTemplate("/components/aboutcontainer.html.twig", "/landingpage/landing.html.twig", 8)->unwrap()->yield(CoreExtension::merge($context, ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 8, $this->source); })())]));
+        // line 9
         yield "\t";
-        yield from         $this->loadTemplate("/components/contactform.html.twig", "/landingpage/landing.html.twig", 13)->unwrap()->yield($context);
-        // line 14
+        yield from         $this->loadTemplate("/components/contactform.html.twig", "/landingpage/landing.html.twig", 9)->unwrap()->yield($context);
+        // line 10
         yield "\t";
         yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("footer");
         yield "
 ";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-        yield from [];
-    }
-
-    // line 6
-    /**
-     * @return iterable<null|scalar|\Stringable>
-     */
-    public function block_nav(array $context, array $blocks = []): iterable
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "nav"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "nav"));
-
-        // line 7
-        yield "\t\t\t\t";
-        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("header");
-        yield "
-\t\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -154,7 +121,7 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  123 => 7,  110 => 6,  96 => 14,  93 => 13,  91 => 12,  88 => 11,  86 => 10,  83 => 9,  81 => 6,  77 => 4,  64 => 3,  41 => 1,);
+        return array (  90 => 10,  87 => 9,  85 => 8,  82 => 7,  80 => 6,  76 => 4,  63 => 3,  40 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -163,11 +130,7 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
 
 {% block body %}
 \t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
-\t\t<nav data-controller=\"scroll\" class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 sticky top-6 m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
-\t\t\t{% block nav %}
-\t\t\t\t{{component(\"header\")}}
-\t\t\t{% endblock %}
-\t\t</nav>
+
 \t\t{% include \"/components/landingmain.html.twig\" %}
 \t</main>
 \t{% include \"/components/aboutcontainer.html.twig\" with {\"utilities\": utilities} %}

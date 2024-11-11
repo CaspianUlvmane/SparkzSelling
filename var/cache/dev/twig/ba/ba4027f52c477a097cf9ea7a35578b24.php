@@ -36,6 +36,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
             'stylesheets' => [$this, 'block_stylesheets'],
             'javascripts' => [$this, 'block_javascripts'],
             'importmap' => [$this, 'block_importmap'],
+            'nav' => [$this, 'block_nav'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -51,7 +52,7 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
 
         // line 1
         yield "<!DOCTYPE html>
-<html class=\"scroll-smooth\" lang=\"sv\">
+<html data-controller=\"scrollevents\" class=\"scroll-smooth\" lang=\"sv\">
 \t<head>
 \t\t<meta charset=\"UTF-8\">
 \t\t<title>
@@ -84,14 +85,19 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
         // line 26
         yield "\t</head>
-\t<body>
+\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
 \t\t";
         // line 28
+        yield from $this->unwrap()->yieldBlock('nav', $context, $blocks);
+        // line 31
+        yield "\t</nav>
+\t<body data-action=\"scroll@window->scrollevents#navscroll\" class=\"flex flex-col items-center\"> ";
+        // line 32
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 29
+        // line 33
         yield "
-\t</body>
-</html>
+\t\t</body>
+\t</html>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -210,6 +216,33 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
     /**
      * @return iterable<null|scalar|\Stringable>
      */
+    public function block_nav(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "nav"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "nav"));
+
+        // line 29
+        yield "\t\t\t";
+        yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("header");
+        yield "
+\t\t";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 32
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
     public function block_body(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
@@ -249,13 +282,13 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  210 => 28,  196 => 23,  183 => 22,  172 => 25,  170 => 22,  165 => 21,  152 => 20,  130 => 17,  106 => 6,  92 => 29,  90 => 28,  86 => 26,  84 => 20,  78 => 18,  74 => 17,  70 => 15,  62 => 8,  60 => 6,  53 => 1,);
+        return array (  243 => 32,  229 => 29,  216 => 28,  202 => 23,  189 => 22,  178 => 25,  176 => 22,  171 => 21,  158 => 20,  136 => 17,  112 => 6,  98 => 33,  96 => 32,  93 => 31,  91 => 28,  87 => 26,  85 => 20,  79 => 18,  75 => 17,  71 => 15,  63 => 8,  61 => 6,  54 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("<!DOCTYPE html>
-<html class=\"scroll-smooth\" lang=\"sv\">
+<html data-controller=\"scrollevents\" class=\"scroll-smooth\" lang=\"sv\">
 \t<head>
 \t\t<meta charset=\"UTF-8\">
 \t\t<title>
@@ -280,11 +313,15 @@ class __TwigTemplate_e9767eb5627bd551a1594475b23bb549 extends Template
 \t\t\t{% endblock %}
 \t\t{% endblock %}
 \t</head>
-\t<body>
-\t\t{% block body %}{% endblock %}
+\t<nav class=\"bg-Blue-900 min-w-[85%] rounded-full h-16 fixed top-[24px] m-auto flex z-20 items-center pl-10 pr-10 justify-between\">
+\t\t{% block nav %}
+\t\t\t{{component(\"header\")}}
+\t\t{% endblock %}
+\t</nav>
+\t<body data-action=\"scroll@window->scrollevents#navscroll\" class=\"flex flex-col items-center\"> {% block body %}{% endblock %}
 
-\t</body>
-</html>
+\t\t</body>
+\t</html>
 ", "base.html.twig", "C:\\Users\\TVTVTV\\Documents\\GitHub\\SparkzSelling\\templates\\base.html.twig");
     }
 }

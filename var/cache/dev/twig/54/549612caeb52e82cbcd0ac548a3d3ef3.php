@@ -45,7 +45,7 @@ class __TwigTemplate_7b7395d4214ce931e5511711c8ee0ae3 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/aboututility.html.twig"));
 
         // line 1
-        yield "<div class=\"rounded-md bg-Blue-800 p-4 flex flex-col gap-4\">
+        yield "<div class=\"rounded-xl bg-Blue-800 p-12 flex flex-col gap-4\">
 \t<div class=\"text-Blue-300 text-4xl\">";
         // line 2
         yield CoreExtension::getAttribute($this->env, $this->source, (isset($context["utilitiy"]) || array_key_exists("utilitiy", $context) ? $context["utilitiy"] : (function () { throw new RuntimeError('Variable "utilitiy" does not exist.', 2, $this->source); })()), "icon", [], "array", false, false, false, 2);
@@ -96,7 +96,7 @@ class __TwigTemplate_7b7395d4214ce931e5511711c8ee0ae3 extends Template
 
     public function getSourceContext(): Source
     {
-        return new Source("<div class=\"rounded-md bg-Blue-800 p-4 flex flex-col gap-4\">
+        return new Source("<div class=\"rounded-xl bg-Blue-800 p-12 flex flex-col gap-4\">
 \t<div class=\"text-Blue-300 text-4xl\">{{utilitiy[\"icon\"] | raw}}</div>
 \t<h3 class=\"text-white font-semibold text-xl\">{{utilitiy[\"title\"]}}<span class=\"text-Blue-300\">.</span>
 \t</h3>

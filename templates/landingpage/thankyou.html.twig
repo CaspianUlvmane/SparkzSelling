@@ -1,12 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-	<div class="bg-Blue-800 pt-20 relative h-screen overflow-hidden">
-		<nav data-controller="scroll" class="bg-Blue-900 min-w-[85%] rounded-full h-16 absolute m-auto flex items-center pl-10 pr-10 justify-between z-10 left-1/2 top-6 translate-x-[-50%]">
-			{% block nav %}
-				{{component("header")}}
-			{% endblock %}
-		</nav>
+	<div class="bg-Blue-800 pt-20 relative h-screen w-full overflow-hidden">
 		<div class="overflow-hidden">
 			<img class="opacity-10 object-cover z-0" src="{{ asset('images/sparkz_logo_white.svg') }}" alt="">
 		</div>

@@ -45,7 +45,7 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/components/contactform.html.twig"));
 
         // line 1
-        yield "<div id=\"contact\" class=\"bg-Blue-800 pt-20 relative\">
+        yield "<div id=\"contact\" class=\"bg-Blue-800 pt-20 relative w-full \">
 \t<div class=\"h-[600px] overflow-hidden\">
 \t\t<img class=\"opacity-10 object-cover\" src=\"";
         // line 3
@@ -103,7 +103,7 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
 
     public function getSourceContext(): Source
     {
-        return new Source("<div id=\"contact\" class=\"bg-Blue-800 pt-20 relative\">
+        return new Source("<div id=\"contact\" class=\"bg-Blue-800 pt-20 relative w-full \">
 \t<div class=\"h-[600px] overflow-hidden\">
 \t\t<img class=\"opacity-10 object-cover\" src=\"{{ asset('images/sparkz_logo_white.svg') }}\" alt=\"\">
 \t</div>

@@ -44,7 +44,7 @@ class __TwigTemplate_ceac5cd636638d52fe8fabfce3c73cdc extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/header.html.twig"));
 
-        // line 1
+        // line 2
         yield "<a data-action=\"click->scrollevents#scrollevent\" href=\"/\"><img class=\"w-28\" src=\"";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/sparkz_logo.svg"), "html", null, true);
         yield "\" alt=\"To start\"></a>
@@ -83,12 +83,13 @@ class __TwigTemplate_ceac5cd636638d52fe8fabfce3c73cdc extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  48 => 1,);
+        return array (  48 => 2,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("<a data-action=\"click->scrollevents#scrollevent\" href=\"/\"><img class=\"w-28\" src=\"{{ asset('images/sparkz_logo.svg') }}\" alt=\"To start\"></a>
+        return new Source("{# Uses the 'scrollevent' method to navigate to content #}
+<a data-action=\"click->scrollevents#scrollevent\" href=\"/\"><img class=\"w-28\" src=\"{{ asset('images/sparkz_logo.svg') }}\" alt=\"To start\"></a>
 <div class=\"flex gap-8 text-white\">
 \t<button data-action=\"click->scrollevents#scrollevent\" href=\"/#about\">Om oss</button>
 \t<button data-action=\"click->scrollevents#scrollevent\" href=\"/#contact\">Kontakt</button>

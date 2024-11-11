@@ -59,7 +59,7 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
 
     }
 
-    // line 3
+    // line 5
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -72,21 +72,21 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 4
-        yield "\t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
-
-\t\t";
         // line 6
-        yield from         $this->loadTemplate("/components/landingmain.html.twig", "/landingpage/landing.html.twig", 6)->unwrap()->yield($context);
+        yield "\t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
+\t\t";
         // line 7
+        yield from         $this->loadTemplate("/components/landingmain.html.twig", "/landingpage/landing.html.twig", 7)->unwrap()->yield($context);
+        // line 8
         yield "\t</main>
 \t";
-        // line 8
-        yield from         $this->loadTemplate("/components/aboutcontainer.html.twig", "/landingpage/landing.html.twig", 8)->unwrap()->yield(CoreExtension::merge($context, ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 8, $this->source); })())]));
-        // line 9
-        yield "\t";
-        yield from         $this->loadTemplate("/components/contactform.html.twig", "/landingpage/landing.html.twig", 9)->unwrap()->yield($context);
         // line 10
+        yield "\t";
+        yield from         $this->loadTemplate("/components/aboutcontainer.html.twig", "/landingpage/landing.html.twig", 10)->unwrap()->yield(CoreExtension::merge($context, ["utilities" => (isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 10, $this->source); })())]));
+        // line 11
+        yield "\t";
+        yield from         $this->loadTemplate("/components/contactform.html.twig", "/landingpage/landing.html.twig", 11)->unwrap()->yield($context);
+        // line 12
         yield "\t";
         yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("footer");
         yield "
@@ -121,18 +121,20 @@ class __TwigTemplate_387cd071c879dd690011d638803a16ad extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  90 => 10,  87 => 9,  85 => 8,  82 => 7,  80 => 6,  76 => 4,  63 => 3,  40 => 1,);
+        return array (  90 => 12,  87 => 11,  84 => 10,  81 => 8,  79 => 7,  76 => 6,  63 => 5,  40 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
+{# Landing page initialized by MainController.php. 
+\tuses the twig 'includes' method to render components. #}
 {% block body %}
 \t<main id=\"main\" class=\"flex flex-col bg-gradient-to-t from-Blue-800 to-Blue-600 gap-5 relative\">
-
 \t\t{% include \"/components/landingmain.html.twig\" %}
 \t</main>
+\t{# Utilities recieved from MainController.php sent as params to component #}
 \t{% include \"/components/aboutcontainer.html.twig\" with {\"utilities\": utilities} %}
 \t{% include \"/components/contactform.html.twig\" %}
 \t{{component(\"footer\")}}

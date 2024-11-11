@@ -50,13 +50,15 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
 \t\t<span class=\"text-Blue-200\">Sparkz</span>
 \t</h1>
 \t<p class=\"m-auto text-Blue-100 font-semibold text-xl\">Hantera ditt erbjudande mot kunder på bästa sätt. Sparkz täcker alla områden.</p>
-\t<div class=\"grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16\">
+\t<div
+\t\tclass=\"grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16\">
 \t\t";
-        // line 7
+        // line 9
+        yield "\t\t";
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 7, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["utilities"]) || array_key_exists("utilities", $context) ? $context["utilities"] : (function () { throw new RuntimeError('Variable "utilities" does not exist.', 9, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["utilitiy"]) {
-            // line 8
+            // line 10
             yield "\t\t\t";
             yield $this->env->getRuntime('Symfony\UX\TwigComponent\Twig\ComponentRuntime')->render("aboututility", ["utilitiy" => $context["utilitiy"]]);
             yield "
@@ -65,7 +67,7 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['utilitiy'], $context['_parent']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 10
+        // line 12
         yield "\t</div>
 </div>
 <div class=\"w-full h-28 bg-gradient-to-tl from-Blue-800 from-[49%] via-Blue-700 via-50% to-Blue-700 to-50%\"></div>
@@ -100,7 +102,7 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  69 => 10,  60 => 8,  56 => 7,  48 => 1,);
+        return array (  71 => 12,  62 => 10,  57 => 9,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -110,7 +112,9 @@ class __TwigTemplate_3e748fee6c26b947a9a8be5001666297 extends Template
 \t\t<span class=\"text-Blue-200\">Sparkz</span>
 \t</h1>
 \t<p class=\"m-auto text-Blue-100 font-semibold text-xl\">Hantera ditt erbjudande mot kunder på bästa sätt. Sparkz täcker alla områden.</p>
-\t<div class=\"grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16\">
+\t<div
+\t\tclass=\"grid grid-cols-3 gap-4 max-w-[80%] m-auto pt-8 pb-16\">
+\t\t{# Loops through utilities from Utilitiesrepository.php and renders through utility component. #}
 \t\t{% for utilitiy in utilities %}
 \t\t\t{{component(\"aboututility\", {\"utilitiy\": utilitiy})}}
 \t\t{% endfor %}

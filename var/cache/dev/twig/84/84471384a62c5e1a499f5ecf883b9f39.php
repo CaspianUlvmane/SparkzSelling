@@ -52,18 +52,23 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/sparkz_logo_white.svg"), "html", null, true);
         yield "\" alt=\"\">
 \t</div>
-\t<form class=\"absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-4 items-center\" action=\"/submit\" method=\"post\">
+\t";
+        // line 6
+        yield "\t<form class=\"absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-4 items-center\" action=\"/submit\" method=\"post\">
 \t\t<h1 class=\"text-5xl text-white font-extrabold pb-6\">Kontakta
 \t\t\t<span class=\"text-Blue-200\">oss</span>
 \t\t</h1>
-
-\t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt namn!')\" onchange=\"this.setCustomValidity('')\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
+\t\t";
+        // line 11
+        yield "\t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt namn!')\" onchange=\"this.setCustomValidity('')\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
 
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i en E-mail adress!')\" onchange=\"this.setCustomValidity('')\" type=\"email\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
 
-\t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt telefon nummer!')\" onchange=\"this.setCustomValidity('')\" type=\"number\" class=\"bg-transparent [appearance:textfield] p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
-
-\t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
+\t\t<input
+\t\trequired oninvalid=\"this.setCustomValidity('Fyll i ditt telefon nummer!')\" onchange=\"this.setCustomValidity('')\" type=\"number\" class=\"bg-transparent [appearance:textfield] p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
+\t\t";
+        // line 18
+        yield "\t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
 \t</form>
 
 </div>
@@ -98,7 +103,7 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  52 => 3,  48 => 1,);
+        return array (  71 => 18,  63 => 11,  57 => 6,  52 => 3,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -107,17 +112,19 @@ class __TwigTemplate_caa166944a531ca58f1192f805913324 extends Template
 \t<div class=\"h-[600px] overflow-hidden\">
 \t\t<img class=\"opacity-10 object-cover\" src=\"{{ asset('images/sparkz_logo_white.svg') }}\" alt=\"\">
 \t</div>
+\t{# Contact from which sends an email with customer information to specified emailadress. Specify in SubmitController.php. #}
 \t<form class=\"absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col gap-4 items-center\" action=\"/submit\" method=\"post\">
 \t\t<h1 class=\"text-5xl text-white font-extrabold pb-6\">Kontakta
 \t\t\t<span class=\"text-Blue-200\">oss</span>
 \t\t</h1>
-
+\t\t{# Inputs are required, display custom error messages and have a type to indicate content. #}
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt namn!')\" onchange=\"this.setCustomValidity('')\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"name\" id=\"name\" placeholder=\"Namn\">
 
 \t\t<input required oninvalid=\"this.setCustomValidity('Fyll i en E-mail adress!')\" onchange=\"this.setCustomValidity('')\" type=\"email\" class=\"bg-transparent p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"E-post\">
 
-\t\t<input required oninvalid=\"this.setCustomValidity('Fyll i ditt telefon nummer!')\" onchange=\"this.setCustomValidity('')\" type=\"number\" class=\"bg-transparent [appearance:textfield] p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
-
+\t\t<input
+\t\trequired oninvalid=\"this.setCustomValidity('Fyll i ditt telefon nummer!')\" onchange=\"this.setCustomValidity('')\" type=\"number\" class=\"bg-transparent [appearance:textfield] p-4 pl-8 rounded-full w-[600px] text-xl border-2 border-white text-white focus-visible:outline-none focus-visible:shadow-input\" type=\"text\" name=\"phone\" id=\"phone\" placeholder=\"Telefon\">
+\t\t{# Turbo disabled allowing email to be sent and redirect to thankyou.html.twig #}
 \t\t<button data-turbo=\"false\" data-controller=\"animation\" data-action=\"click->animation#loading\" class=\"relative text-lg flex items-center gap-4 rounded-full mt-6 bg-Blue-200 w-fit m-auto p-4 pl-7 pr-7 font-semibold hover:bg-white transition-all duration-300\">Skicka formulär</button>
 \t</form>
 

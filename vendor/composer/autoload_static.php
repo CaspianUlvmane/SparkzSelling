@@ -92,6 +92,7 @@ class ComposerStaticInit8116c249f0b4dbcd995d077b53ca826b
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -360,6 +361,10 @@ class ComposerStaticInit8116c249f0b4dbcd995d077b53ca826b
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Monolog\\' => 
         array (

@@ -3,7 +3,7 @@
         'name' => 'symfony/skeleton',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5e62283549acc76f13704c49f8aec032c2816f1f',
+        'reference' => 'c00a1ac3f835898f7584c2cc066b501055046262',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -57,6 +57,15 @@
             'provided' => array(
                 0 => '*',
             ),
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.9.3',
+            'version' => '6.9.3.0',
+            'reference' => '2f5c94fe7493efc213f643c23b1b1c249d40f47e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'psr/cache' => array(
             'pretty_version' => '3.0.0',
@@ -575,7 +584,7 @@
         'symfony/skeleton' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5e62283549acc76f13704c49f8aec032c2816f1f',
+            'reference' => 'c00a1ac3f835898f7584c2cc066b501055046262',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

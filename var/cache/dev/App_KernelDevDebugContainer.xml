@@ -279,7 +279,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.m_s5NPy"/>
+      <argument type="service" id=".service_locator.ljKqQhC"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -1917,7 +1917,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.m_s5NPy"/>
+      <argument type="service" id=".service_locator.ljKqQhC"/>
     </service>
     <service id="debug.log_processor" class="Symfony\Bridge\Monolog\Processor\DebugProcessor">
       <tag name="kernel.reset" method="reset"/>
@@ -3269,25 +3269,13 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.brzH9uj" method="withContext"/>
     </service>
-    <service id=".service_locator..V3RrT8" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="mailer" type="service_closure" id="mailer.mailer"/>
-      </argument>
-    </service>
-    <service id=".service_locator..V3RrT8.App\Controller\SubmitController::Submit()" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator_context" id="App\Controller\SubmitController::Submit()"/>
-      <argument>App\Controller\SubmitController::Submit()</argument>
-      <argument type="service" id="service_container"/>
-      <factory service=".service_locator..V3RrT8" method="withContext"/>
-    </service>
     <service id=".service_locator.brzH9uj.App\Controller\UtilitiesController::getCollection()" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\UtilitiesController::getCollection()"/>
       <argument>App\Controller\UtilitiesController::getCollection()</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.brzH9uj" method="withContext"/>
     </service>
-    <service id=".service_locator.m_s5NPy" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.ljKqQhC" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.4wc4Ag1.kernel::registerContainerConfiguration()"/>
@@ -3295,12 +3283,10 @@
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.4wc4Ag1.kernel::loadRoutes()"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.4wc4Ag1.kernel::loadRoutes()"/>
         <argument key="App\Controller\MainController::Main" type="service_closure" id=".service_locator.brzH9uj.App\Controller\MainController::Main()"/>
-        <argument key="App\Controller\SubmitController::Submit" type="service_closure" id=".service_locator..V3RrT8.App\Controller\SubmitController::Submit()"/>
         <argument key="App\Controller\UtilitiesController::getCollection" type="service_closure" id=".service_locator.brzH9uj.App\Controller\UtilitiesController::getCollection()"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.4wc4Ag1.kernel::registerContainerConfiguration()"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.4wc4Ag1.kernel::loadRoutes()"/>
         <argument key="App\Controller\MainController:Main" type="service_closure" id=".service_locator.brzH9uj.App\Controller\MainController::Main()"/>
-        <argument key="App\Controller\SubmitController:Submit" type="service_closure" id=".service_locator..V3RrT8.App\Controller\SubmitController::Submit()"/>
         <argument key="App\Controller\UtilitiesController:getCollection" type="service_closure" id=".service_locator.brzH9uj.App\Controller\UtilitiesController::getCollection()"/>
       </argument>
     </service>
@@ -4232,7 +4218,7 @@
     <service id="Symfony\UX\Turbo\Broadcaster\BroadcasterInterface" alias="turbo.broadcaster.action_renderer"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.pRu6x_4" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.m_s5NPy"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.ljKqQhC"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
@@ -4261,7 +4247,6 @@
     <service id="turbo.broadcaster.imux" alias="turbo.broadcaster.action_renderer"/>
     <service id=".service_locator.diNoEIK" alias=".service_locator.4wc4Ag1"/>
     <service id=".service_locator.S7aET4b" alias=".service_locator.brzH9uj"/>
-    <service id=".service_locator.CKuCekY" alias=".service_locator..V3RrT8"/>
     <service id=".service_locator.mI_HcvE" alias=".service_locator.QaaoWjx"/>
   </services>
 </container>

@@ -3,12 +3,8 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-// use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Attribute\Route;
-// use Symfony\Component\Mime\Email;
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 
 class SubmitController extends AbstractController
 {
@@ -20,7 +16,9 @@ class SubmitController extends AbstractController
         $emailadress = $_POST["email"];
         $phone = $_POST["phone"];
         $message = $name . " önskar att diskutera Sparkz, du kan nå dem genom " . $emailadress . " eller " . $phone;
-        //Symfony email, uses SMTP - for changes check MAILER_DSN in .env file
+
+        //PHPMailer simplifies emailing process
+        //SMTP authorization using Gmail
         $email = new PHPMailer(true);
         $email->isSMTP();
         $email->SMTPAuth = true;
@@ -28,14 +26,16 @@ class SubmitController extends AbstractController
         $email->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $email->Port = 587;
 
+        //To change sender email, change username and generate new password at - https://myaccount.google.com/apppasswords?continue=https://myaccount.google.com/security?rapt%3DAEjHL4N-mZBt3Fkj2zCMTCKAlKCfiujvz7zCl4jVkPXVQuX7a1DP3UtwCXxR26Z_hMZoIKIupiGSV52pc_YrsoITN-Pms21n_2oHPN8VbY3-vFJq-bZFI-s&pli=1&rapt=AEjHL4PRkRbIoQxkve58N-ITKd2FlWy54mMr9TLNFYhAmhuaJXGiVs0rG9m7WXwgeHyTAvZwarjp3wfkoOLomKI2EZPU1PviR9uKdcoTX7H8IYsVp9DQybg
         $email->Username = "cabbeulv@gmail.com";
         $email->Password = "raiz evfb rjot wygl";
 
+        //Sets from address and name of prospect
+        $email->setFrom($email, $name);
+        //To change email of reciever simply write a diffrent email in the first param position (Should be Jens Grip)
+        $email->addAddress('caspianulvmane@gmail.com', 'Caspian');
 
-        $email->setFrom('cabbeulv@gmail.com', $name);
-        $email->addAddress('caspianulvmane@gmail.com', 'Caspian');     // Add a recipient
-        // $email->addReplyTo('cabbeulv@gmail.com', 'Information');
-
+        //To change subject of email simply change the text "Spakrz prospekt" to a fitting string 
         $email->Subject = 'Sparkz prospekt';
         $email->Body    = $message;
         $email->AltBody = $message;
